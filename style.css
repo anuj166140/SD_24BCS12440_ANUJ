@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eef2ff);
+    color: #111827;
+    perspective: 1200px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(90deg,#1e3a8a,#2563eb);
+    color: white;
+}
+
+/* BUTTON */
+.btn {
+    background: white;
+    color: #1e3a8a;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.container {
+    width: 85%;
+    margin: 30px auto;
+}
+
+/* PROFILE */
+.profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 25px;
+    transition: 0.3s ease;
+}
+
+/* SUBJECTS */
+.subject-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.subject-card {
+    flex: 1;
+    background: white;
+    padding: 12px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.subject-card.active {
+    transform: scale(1.08);
+    box-shadow: 0 25px 50px rgba(37,99,235,0.4);
+}
+
+.subject-card p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+canvas {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+/* BADGE */
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+}
+
+/* CALENDAR */
+#calendar {
+    margin-top: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+/* LEAVE PAGE */
+.leave-container {
+    width: 45%;
+    margin: 50px auto;
+}
+
+.leave-section {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.leave-types {
+    display: flex;
+    gap: 10px;
+}
+
+.leave-card {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    background: #f3f4f6;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.leave-card.active {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.05);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.full { width: 100%; margin-top: 10px; }
